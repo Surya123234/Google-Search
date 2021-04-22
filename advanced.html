@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Advanced Search</title>
+</head>
+
+<body>
+    <div id="img-cont">
+        <img id="small-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google img">
+    </div>
+
+    <div id="header">
+        <span>Advanced Search</span>
+    </div>
+
+    <div class="line-break"></div>
+
+    <div class="container">
+        <div id="intro">
+            Find pages with...
+            <span id="todo">To do this in the search box.</span>
+        </div>
+
+        <form action="https://www.google.ca/search" method="GET">
+            <div class="large-cont">
+                <label for="all-words">all these words:</label>
+                <input class="advanced-input" type="text" name="as_q" id="all-words">
+                <span class="description">Type the important words:
+                    <span class="examples">tri-colour rat terrier</span>
+                </span>
+
+                <label for="exact">this exact word or phrase:</label>
+                <input class="advanced-input" type="text" name="as_epq" id="exact">
+                <span class="description">Put exact words in quotes:
+                    <span class="examples">"rat terrier"</span>
+                </span>
+
+                <label for="any">any of these words:</label>
+                <input class="advanced-input" type="text" name="as_oq" id="any">
+                <span class="description">Type OR between all the words you want:
+                    <span class="examples">miniature OR standard</span>
+                </span>
+
+                <label for="none">none of these words:</label>
+                <input class="advanced-input type=" text" name="as_eq" id="none">
+                <span class="description">Put a minus sign just before words that you don't want:
+                    <span class="examples">-rodent, -"Jack Russell"</span>
+                </span>
+            </div>
+            <input id="advanced-submit" type="submit" value="Advanced Search">
+        </form>
+    </div>
+    <a id="advanced-pg-link" href="index.html"> Back to Google Search</a>
+</body>
+
+</html>
